@@ -1468,4 +1468,22 @@ a {
         top: -55px;
         right: -25px;
     }
+
+    .popup .contact__title {
+        font-size: 30px;
+    }
+
+    .popup .contact__form-submit {
+        padding: 10px 100px;
+    }
+
+    .popup .contact__form-input input {
+        margin-top: 5px;
+        height: 40px;
+    }
+
+    .popup .contact__form label {
+        font-size: 14px;
+        margin-top: 0;
+    }
 }

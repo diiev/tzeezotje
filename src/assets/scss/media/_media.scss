@@ -432,6 +432,27 @@
             font-size: 50px;
             top: -55px;
             right: -25px;
+        } 
+        
+        .contact {
+            &__title {
+                font-size: 30px;
+            }
+            &__form {
+                &-submit {
+                    padding: 10px 100px;
+                }
+                &-input {
+                    input {
+                        margin-top: 5px;
+                        height: 40px;
+                    }
+                }
+                label {
+                    font-size: 14px;
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
