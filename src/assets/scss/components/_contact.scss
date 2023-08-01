@@ -1,0 +1,103 @@
+.contact {
+    padding-bottom: 40px;
+    &__container {
+        display: grid;
+        grid-template-columns: auto 670px;
+        column-gap: 30px;
+    } 
+    &__title {
+        color: #000;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 183.333% */
+    }
+    &__about {
+       
+        &-block {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+           
+            
+        }
+        &-descr {
+            margin-left: 16px; 
+            color: #2E2E2E;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+        }
+        &-adr {
+            color: #2E2E2E;
+            display: block;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; /* 133.333% */
+        }
+        &-icon {
+            width: 64px;
+            height: 64px;
+            background: $secondary;
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 20px;
+
+        }
+    }
+    &__form {
+      &-input {
+        display: flex;
+        justify-content: space-between; 
+        gap: 10px;
+        input {
+            margin-top: 10px;
+            display: block;
+            width: 320px;
+            height: 80px;
+            padding: 28px 16px;
+            color: #808080;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+      }
+        label {
+            text-align: left;
+            display: block;
+            margin-top: 29px;
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+        }
+        &-submit {
+            margin-top: 20px;
+            padding: 38px 104px;
+            border: 1px solid $primary;
+            cursor: pointer;
+          
+        }
+        textarea {
+            margin-top: 10px;
+            width: 100%;
+            padding: 28px 16px;
+            color: #808080;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            height: 125px; /* 150% */
+        }
+    }
+    &__map {
+        margin-top: 50px;
+    }
+
+}

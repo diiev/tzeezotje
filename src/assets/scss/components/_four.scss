@@ -1,0 +1,42 @@
+.four {
+    padding-top: 109px;
+    padding-bottom: 80px;
+    &__item {
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 560px;
+        column-gap: 30px;
+        &-odd {
+            grid-template-columns: auto 670px;
+        }
+        &-even {
+            grid-template-columns: 670px auto;
+        }
+    } 
+    &__title {
+        color: #000;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 220% */
+    }
+    &__text {
+        margin-top: 16px;
+        color: #808080;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+    }
+    &__descr {
+        margin-top: 178px;
+    }
+    &__divider {
+       width: 108px;
+       border: 2px solid $secondary;
+       margin-left: -60px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}

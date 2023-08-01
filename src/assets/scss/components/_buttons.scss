@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block;
+    padding: 38px 65px;
+    background: $primary;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background: #fff;
+        color: $primary
+    }
+    &-social {
+        width: 48px;
+        height: 48px;
+        display: block;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        color: #fff;
+        padding: 12px;
+        transition: all .3s ease-in-out;
+        margin-right: 25px;
+        &:hover {
+            background: $primary;
+            border-color: $primary;
+
+        }
+        &-black {
+            color: #000;
+            border: 1px solid #000;
+            &:hover {
+                color: #fff;
+            }
+        }
+    } 
+
+}

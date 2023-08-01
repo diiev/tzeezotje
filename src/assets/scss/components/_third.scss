@@ -1,0 +1,66 @@
+.third {
+    position: relative;
+    padding: 200px 0;
+    background: $primary;
+    &__slider {
+        &-item {
+            padding: 0 193px;
+            text-align: center;
+        }
+        &-title {
+            margin-top: 34px;
+            color: $secondary;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px; 
+        }
+        &-text {
+            margin-top: 20px;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+        }
+        &-author {
+            margin-top: 40px;
+            color: $secondary;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px; 
+            letter-spacing: 5.88px;
+        }
+    }
+
+ .slider__next, .slider__prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+        path {
+            transition: all .3s ease-in-out;
+        }
+       
+    }
+    &:hover {
+        svg {
+            
+            path {
+                stroke:  $secondary;
+            }
+        }
+    }
+ } 
+ .slider__prev {
+    left: 15%;
+ }
+ .slider__next {
+    right: 15%;
+ }
+}

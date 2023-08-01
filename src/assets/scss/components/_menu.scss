@@ -1,0 +1,53 @@
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    width: 30px;
+    height: 20px;
+    transform: scale(.8);
+    &:before,
+    &:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s
+} 
+    &:before {
+        top: 0
+    }
+
+    &:after {
+        bottom: 0
+    }
+
+    span {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+        left: 0;
+        transition: all .4s ease 0s;
+       
+    } 
+    &.active:before {
+        transform: rotate(45deg);
+        top: 8px
+    }
+    
+    &.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px
+    }
+    
+    &.active span {
+        display: none
+    }
+    
+}
