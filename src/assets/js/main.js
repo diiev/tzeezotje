@@ -2,6 +2,7 @@ import slider from "./modules/slider";
 import modals from "./modules/modal";
 import Form from "./modules/forms";
 import menu from "./modules/menu";
+import scrolling from "./modules/scrolling";
 
 document.addEventListener('DOMContentLoaded', () => {   
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         new Form('#contact-form').init();
         new Form('#reserve-form').init();
         menu();
+        scrolling();
     }
 
     catch(e) {

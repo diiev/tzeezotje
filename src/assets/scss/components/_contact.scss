@@ -37,6 +37,10 @@
             font-style: normal;
             font-weight: 500;
             line-height: 32px; /* 133.333% */
+            transition: all .3s ease-out;
+            &:hover {
+                color: $secondary;
+            }
         }
         &-icon {
             width: 64px;
