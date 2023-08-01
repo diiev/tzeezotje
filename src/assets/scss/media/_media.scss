@@ -87,7 +87,10 @@
             }
         }
         &__buttons {
-            display: none;
+            &-social {
+                display: none;
+            }
+           
             &-mobile {
                 display: flex;
                 position: absolute;
@@ -317,11 +320,8 @@
           
         }
         .slider {
-            &__prev {
-                left: 5px;
-            }
-            &__next {
-                right: 5px;
+            &__prev,  &__next {
+                display: none;
             }
           }
       } 
@@ -357,6 +357,10 @@
             &-mobile {
 
             }
+        }
+        .btn {
+            font-size: 14px;
+            padding: 20px 40px;
         }
     }
     .hamburger {
@@ -418,6 +422,16 @@
             a {
                 margin-right: 15px;
             }
+        }
+    }
+    .popup {
+        &__content {
+            padding: 10px;
+        }
+        &__close {
+            font-size: 50px;
+            top: -55px;
+            right: -25px;
         }
     }
 }

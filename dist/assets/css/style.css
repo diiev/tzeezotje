@@ -772,7 +772,6 @@ a {
 .popup__content {
     position: fixed;
     text-align: center;
-    max-width: 60rem;
     left: 50%;
     top: 10%;
     background-color: #ededed;
@@ -925,7 +924,7 @@ a {
         transform: translateX(-50%);
     }
 
-    .header__buttons {
+    .header__buttons-social {
         display: none;
     }
 
@@ -1152,12 +1151,8 @@ a {
         padding: 0 50px;
     }
 
-    .third .slider__prev {
-        left: 5px;
-    }
-
-    .third .slider__next {
-        right: 5px;
+    .third .slider__prev, .third .slider__next {
+        display: none;
     }
 
     .contact__title {
@@ -1181,6 +1176,11 @@ a {
     .header__title {
         font-size: 26px;
         line-height: 40px;
+    }
+
+    .header .btn {
+        font-size: 14px;
+        padding: 20px 40px;
     }
 
     .hamburger {
@@ -1238,5 +1238,15 @@ a {
 
     .footer__social a {
         margin-right: 15px;
+    }
+
+    .popup__content {
+        padding: 10px;
+    }
+
+    .popup__close {
+        font-size: 50px;
+        top: -55px;
+        right: -25px;
     }
 }
