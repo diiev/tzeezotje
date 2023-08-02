@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         new Form('#contact-form').init();
         new Form('#reserve-form').init();
         menu();
-        scrolling();
+        scrolling('.up');
     }
 
     catch(e) {

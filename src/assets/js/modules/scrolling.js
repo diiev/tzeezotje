@@ -1,4 +1,15 @@
-const scrolling = () => {
+const scrolling = (upSelector) => {
+    const upElem = document.querySelector(upSelector); 
+    window.addEventListener('scroll', () => {
+           if (document.documentElement.scrollTop > 1000) {
+                        upElem.style.opacity = 1;
+                        upElem.style.visibility = 'visible';
+           } 
+           else {
+            upElem.style.opacity = 0;
+            upElem.style.visibility = 'hiiden';
+           }
+    }); 
 
 
     let links = document.querySelectorAll('[href^="#"]'),

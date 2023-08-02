@@ -1059,6 +1059,33 @@ a {
     display: none;
 }
 
+.up {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background: #D3B47F;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.up svg {
+    transform: rotate(90deg);
+    width: 40px;
+    height: 40px;
+}
+
+.up:hover {
+    background: #3A4574;
+}
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 10px;
@@ -1222,6 +1249,20 @@ a {
         display: flex;
     }
 
+    .second__preview-rectangle {
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .second__preview-img {
+        display: block;
+        margin: 10px auto;
+        position: static;
+    }
+
     .third__slider-quotes svg {
         width: 44px;
         height: 32px;
@@ -1358,20 +1399,6 @@ a {
         line-height: 50px;
     }
 
-    .second__preview-rectangle {
-        position: absolute;
-        height: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-
-    .second__preview-img {
-        display: block;
-        margin: 10px auto;
-        position: static;
-    }
-
     .third__slider-item {
         padding: 0 50px;
     }
@@ -1491,5 +1518,15 @@ a {
     .popup .contact__form label {
         font-size: 14px;
         margin-top: 0;
+    }
+
+    .up {
+        width: 40px;
+        height: 40px;
+    }
+
+    .up svg {
+        width: 20px;
+        height: 20px;
     }
 }

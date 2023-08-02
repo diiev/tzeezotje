@@ -1,0 +1,29 @@
+.up {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background: $secondary;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all .3s ease-out;
+  
+    svg { 
+        
+        transform: rotate(90deg);
+        width: 40px;
+        height: 40px; 
+       
+    } 
+    &:hover {
+        
+            background: $primary;
+      
+    }
+}
