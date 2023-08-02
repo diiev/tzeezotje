@@ -247,6 +247,11 @@ a {
     flex-direction: column;
 }
 
+.body__pr {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
 * {
     font-family: "Poppins", sans-serif;
 }
@@ -1394,6 +1399,10 @@ a {
 }
 
 @media (max-width: 768px) {
+    .body__pr {
+        padding-right: 0;
+    }
+
     .header__title {
         font-size: 32px;
         line-height: 50px;
@@ -1413,6 +1422,34 @@ a {
 
     .footer__social a {
         margin-right: 5px;
+    }
+
+    .popup__content {
+        padding: 10px;
+    }
+
+    .popup__close {
+        font-size: 50px;
+        top: -55px;
+        right: -25px;
+    }
+
+    .popup .contact__title {
+        font-size: 30px;
+    }
+
+    .popup .contact__form-submit {
+        padding: 10px 100px;
+    }
+
+    .popup .contact__form-input input {
+        margin-top: 5px;
+        height: 40px;
+    }
+
+    .popup .contact__form label {
+        font-size: 14px;
+        margin-top: 0;
     }
 }
 
@@ -1490,34 +1527,6 @@ a {
 
     .footer__social a {
         margin-right: 15px;
-    }
-
-    .popup__content {
-        padding: 10px;
-    }
-
-    .popup__close {
-        font-size: 50px;
-        top: -55px;
-        right: -25px;
-    }
-
-    .popup .contact__title {
-        font-size: 30px;
-    }
-
-    .popup .contact__form-submit {
-        padding: 10px 100px;
-    }
-
-    .popup .contact__form-input input {
-        margin-top: 5px;
-        height: 40px;
-    }
-
-    .popup .contact__form label {
-        font-size: 14px;
-        margin-top: 0;
     }
 
     .up {

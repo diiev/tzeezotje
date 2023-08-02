@@ -303,7 +303,9 @@
 }
 
 @media (max-width:768px) {
-    
+       .body__pr {
+            padding-right: 0;
+       }
       .header {
         &__title {
             font-size: 32px;
@@ -336,7 +338,38 @@
                 margin-right: 5px;
             }
         }
-     }
+     } 
+     .popup {
+        &__content {
+            padding: 10px;
+        }
+        &__close {
+            font-size: 50px;
+            top: -55px;
+            right: -25px;
+        } 
+        
+        .contact {
+            &__title {
+                font-size: 30px;
+            }
+            &__form {
+                &-submit {
+                    padding: 10px 100px;
+                }
+                &-input {
+                    input {
+                        margin-top: 5px;
+                        height: 40px;
+                    }
+                }
+                label {
+                    font-size: 14px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:576px) {
@@ -420,37 +453,7 @@
             }
         }
     }
-    .popup {
-        &__content {
-            padding: 10px;
-        }
-        &__close {
-            font-size: 50px;
-            top: -55px;
-            right: -25px;
-        } 
-        
-        .contact {
-            &__title {
-                font-size: 30px;
-            }
-            &__form {
-                &-submit {
-                    padding: 10px 100px;
-                }
-                &-input {
-                    input {
-                        margin-top: 5px;
-                        height: 40px;
-                    }
-                }
-                label {
-                    font-size: 14px;
-                    margin-top: 0;
-                }
-            }
-        }
-    }
+  
     .up {
         width: 40px;
         height: 40px;

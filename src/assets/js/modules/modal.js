@@ -22,8 +22,7 @@ const modals = () => {
                     item.classList.add('animated', 'fadeIn')
                 });
                 modal.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-                document.body.style.marginRight = `${17}px`;
+                document.body.classList.add('body__pr');
 
             });
         });
@@ -33,8 +32,7 @@ const modals = () => {
 
             });
             modal.style.display = 'none';
-            document.body.style.overflow = '';
-            document.body.style.marginRight = '0px';
+            document.body.classList.remove('body__pr');
 
         });
 
@@ -45,8 +43,7 @@ const modals = () => {
                     item.style.display = 'none';
                 });
                 modal.style.display = 'none';
-                document.body.style.overflow = '';
-                document.body.style.marginRight = '0px';
+                document.body.classList.remove('body__pr');
             }
         })
     };
